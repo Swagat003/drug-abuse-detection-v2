@@ -1,0 +1,89 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+.history/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Data files (raw & generated)
+# Uncomment if datasets are large
+# =========================
+Datasets/
+*.csv
+
+# =========================
+# Model artifacts
+# =========================
+Models/**/*.bin
+Models/**/*.pt
+Models/**/*.pth
+Models/**/*.ckpt
+Models/**/*.safetensors
+
+# HuggingFace / Transformers cache
+.cache/
+huggingface/
+
+# =========================
+# Evaluation outputs
+# =========================
+# Models/Evaluation/plots/
+# Models/Evaluation/confusion_matrices/
+# Models/Evaluation/reports/
+# Models/Evaluation/metrics/
+
+# =========================
+# Temporary & runtime files
+# =========================
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# Kaggle / Colab
+# =========================
+kaggle.json
+/content/
+
+# =========================
+# Environment & secrets
+# =========================
+.env
+.env.*
+
+# =========================
+# Python packaging
+# =========================
+*.egg-info/
+dist/
+build/

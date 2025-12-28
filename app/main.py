@@ -75,18 +75,15 @@ tfidf, lr_model, svm_model = load_ml_models()
 @st.cache_resource
 def load_transformers():
     model_map = {
-        "BERT": "bert-base-uncased",
-        "RoBERTa": "roberta-base",
-        "SciBERT": "allenai/scibert_scivocab_uncased"
+        "BERT": "Swagat003/BERT_bert-base",
+        "RoBERTa": "Swagat003/BERT_RoBERTa-base",
+        "SciBERT": "Swagat003/BERT_SciBERT-base"
     }
 
     models = {}
     for name, model_id in model_map.items():
         tokenizer = AutoTokenizer.from_pretrained(model_id)
-        model = AutoModelForSequenceClassification.from_pretrained(
-            model_id,
-            num_labels=2
-        )
+        model = AutoModelForSequenceClassification.from_pretrained(model_id)
         model.to(device)
         model.eval()
         models[name] = (tokenizer, model)

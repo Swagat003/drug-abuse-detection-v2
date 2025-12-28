@@ -1,10 +1,10 @@
-import streamlit as st
-import torch
+import streamlit as st # type: ignore
+import torch # type: ignore
 import joblib
-import numpy as np
+import numpy as np # type: ignore
 import os
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import streamlit.components.v1 as components
+from transformers import AutoTokenizer, AutoModelForSequenceClassification # type: ignore
+import streamlit.components.v1 as components # type: ignore
 
 # ==================================================
 # PAGE CONFIG

@@ -1,8 +1,8 @@
-import torch
-import joblib
-import numpy as np
+import torch # type: ignore
+import joblib # type: ignore
+import numpy as np # type: ignore
 import os
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification # type: ignore
 
 # -----------------------------
 # PATH SETUP (IMPORTANT)

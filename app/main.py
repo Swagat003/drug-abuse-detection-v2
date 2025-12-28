@@ -1,6 +1,6 @@
 import streamlit as st # type: ignore
 import torch # type: ignore
-import joblib
+import joblib # type: ignore
 import numpy as np # type: ignore
 import os
 from transformers import AutoTokenizer, AutoModelForSequenceClassification # type: ignore

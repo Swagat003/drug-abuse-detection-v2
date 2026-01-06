@@ -251,29 +251,29 @@ if analyze_btn and user_text.strip():
     final_label = "Drug Abuse Risk Detected" if final_pred else "No Drug Abuse Risk"
     final_color = "#DC4444" if final_pred else "#4EC37F"
 
-    st.divider()
-    st.markdown(
-        f"""
-        <div style="
-            background:white;
-            border-radius:12px;
-            padding:16px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.05);
-            border-left:6px solid {final_color};
-        ">
-            <div style="font-size:18px;font-weight:600;color:#1F3A5F;">
-                Final Clinical Assessment
-            </div>
-            <div style="color:{final_color};font-size:22px;margin-top:6px;">
-                {final_label}
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+#     st.divider()
+#     st.markdown(
+#         f"""
+#         <div style="
+#             background:white;
+#             border-radius:12px;
+#             padding:16px;
+#             box-shadow:0 2px 8px rgba(0,0,0,0.05);
+#             border-left:6px solid {final_color};
+#         ">
+#             <div style="font-size:18px;font-weight:600;color:#1F3A5F;">
+#                 Final Clinical Assessment
+#             </div>
+#             <div style="color:{final_color};font-size:22px;margin-top:6px;">
+#                 {final_label}
+#             </div>
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-elif analyze_btn:
-    st.warning("Please enter text for analysis.")
+# elif analyze_btn:
+#     st.warning("Please enter text for analysis.")
 
 # ==================================================
 # FOOTER
